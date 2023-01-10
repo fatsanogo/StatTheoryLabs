@@ -83,7 +83,7 @@ quiz(
 
 As you have gone through this tutorial, your progress has been kept track of in something called a "hash". I can use this to make sure you have executed all of the code chunks and answered all of the questions. I will use this to give you a completion grade for this assignment. 
 
-If a Google Form window does not appear, you can access it [here](https://docs.google.com/forms/d/e/1FAIpQLScVRKB7vRsjD-Swc3RzSc01G-eCDZF4cYI3TI89dYOhTMdW2Q/viewform).
+If a Google Form window does not appear, you can access it [here](https://docs.google.com/forms/d/e/1FAIpQLSfvykYtPyuvOarOj3Qi48cXMiQcg5GmFvuq2f_3-mq5n4PNnA/viewform?usp=sf_link).
 
 ```{r context="server"}
 learnrhash::encoder_logic(strip_output = T)
@@ -93,7 +93,7 @@ learnrhash::encoder_logic(strip_output = T)
 learnrhash::encoder_ui(
   ui_before = div(strong("Submit your hash in the form below."), br(), br()),
   ui_after  = learnrhash::iframe_ui(
-    src = "https://docs.google.com/forms/d/e/1FAIpQLScVRKB7vRsjD-Swc3RzSc01G-eCDZF4cYI3TI89dYOhTMdW2Q/viewform", 
+    src = "https://docs.google.com/forms/d/e/1FAIpQLSfvykYtPyuvOarOj3Qi48cXMiQcg5GmFvuq2f_3-mq5n4PNnA/viewform?usp=sf_link", 
     width="900px", height= "1000px"
   )
 )
