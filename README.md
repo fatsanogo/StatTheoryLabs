@@ -17,7 +17,7 @@ This repo was forked from her [original one](https://github.com/sastoudt/StatThe
 
 `remotes::install_github("rundel/learnrhash")`
 
-`remotes::install_github("sastoudt/StatTheoryLabs", build_vignettes = T)`
+`remotes::install_github("fatsanogo/StatTheoryLabs", build_vignettes = T)`
 
 
 2. Thanks to Marney for this one: after install is complete (I know this seems weird, but go with it):
