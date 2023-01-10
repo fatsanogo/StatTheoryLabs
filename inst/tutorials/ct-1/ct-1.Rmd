@@ -65,7 +65,7 @@ head(mtcars)
 
 ### Quiz
 
-I may ask questions in a quiz format to check your understanding. You get automatic feedback. Remember, you are not penalized for getting things wrong initially, but I do expect a good faith effort. Ask questions either on Slack or in office hours.
+I may ask questions in a quiz format to check your understanding. You get automatic feedback. Remember, you are not penalized for getting things wrong initially, but I do expect a good faith effort. Ask questions either by email or in student hours.
 
 ```{r quiz}
 quiz(
