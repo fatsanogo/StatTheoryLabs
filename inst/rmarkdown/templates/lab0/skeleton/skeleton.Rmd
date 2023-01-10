@@ -74,7 +74,7 @@ One advantage of RStudio is that it comes with a built-in data viewer.
 Click on the name `arbuthnot` in the *Environment* pane (upper right window) that lists the objects in your environment. This will bring up an alternative display of the data set in the *Data Viewer* (upper left window). 
 You can close the data viewer by clicking on the `x` in the upper lefthand corner.
 
-*Note*: If you do not see the `arbuthnot` dataset appear in the Environment window, run `data("arbuthnot")` in the console. Then it shoudl appear.
+*Note*: If you do not see the `arbuthnot` dataset appear in the Environment window, run `data("arbuthnot")` in the console. Then it should appear.
 
 What you should see are columns of numbers, each row representing a different year: the first entry in each row is simply the row number (an index we can use to access the data from individual years if we want), the second is the year, and the third and fourth are the numbers of boys and girls baptized that year, respectively. 
 
@@ -141,15 +141,11 @@ The order that your code chunks are run in matters. When you knit the document, 
 
 ## Deliverables
 
-Submit the Rmd and html files to Moodle. Name them as follows:
+Submit the Rmd and html files to lyceum. Name them as follows:
 
 LastName-L-00.Rmd  
 
 LastName-L-00.html
-
-Remember, to get these files onto your own computer, look in the "Files" pane in the bottom right. Check the boxes next to the two files you want to export, click the "More" button (with a little blue gear), click "Export". Make sure you are exporting the files to a place where you can find them on your own computer. 
-
-*Due*: Wednesday, February 2nd at 5 PM
 
 
 ## References 
