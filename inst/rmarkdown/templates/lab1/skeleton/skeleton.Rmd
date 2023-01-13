@@ -8,10 +8,6 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-If you have completed the recent homework, you can skip to the "Some logistics for Lab 1" section.
-
-If you have not completed the recent homework (or want a refresher), read through the next six sections before continuing.
-
 ## Data in the wild
 
 Suppose you are working with an ecologist who wants to know how many deer are in their study site (this is formally called deer abundance). This may be part of an effort to determine whether the population is on the rise or declining, perhaps in connection to a particular disease like [chronic wasting disease](https://www.usgs.gov/faqs/what-chronic-wasting-disease?qt-news_science_products=0#qt-news_science_products).
@@ -72,21 +68,17 @@ But we don't know the probability of detection. What do we do when we don't know
 
 ## Some logistics for Lab 1
 
-This lab will not require you to write any code, but we will use it as a way to get comfortable working in R Markdown documents. You will use R Markdown to create reproducible lab reports and project reports. 
+This lab will not require you to write any code, but we will use it as a way to get comfortable working in R Markdown documents. You will use R Markdown to create reproducible lab reports. 
 
-You will edit this lab1-template.Rmd in your project. Throughout this tutorial you will see questions marked in bold (there are 10 of them). You will not need any coding chunks, but you should take advantage of formatting options to make the report readable. Check out the [R Markdown Cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) for tips.
+Throughout this tutorial you will see questions marked in bold (there are 10 of them). You will not need any coding chunks, but you should take advantage of formatting options to make the report readable. Check out the [R Markdown Cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) for tips.
 
 When you are finished editing your R Markdown document click the "Knit" button and choose "Knit to HTML" in the top left corner of RStudio. This will run all of your code and create a formatted document of the output. If you get an error, it means something in your R Markdown file isn't right, either an error in code or some error in formatting. 
 
-Submit your R Markdown document and knitted file to Moodle as:
+Submit your R Markdown document and knitted file to lyceum as:
 
 LastName-L-01.Rmd 
 
 LastName-L-01.html
-
-To get these files onto your own computer, look in the "Files" pane in the bottom right. Check the boxes next to the two files you want to export, click the "More" button (with a little blue gear), click "Export". Make sure you are exporting the files to a place where you can find them on your own computer. 
-
-*Due*: Friday, February 18th at 5 PM
 
 ## What does capture-recapture data tell us about the detection probability?
 
