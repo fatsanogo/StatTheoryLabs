@@ -43,7 +43,7 @@ You may want to use this framework to go through the larger code chunks in this 
 
 The `c()` function *concatenates* items (of homogenous type) into a vector; for example, `myvector = c(1, 3, 6, 9)` creates a vector that has four elements. To learn about how many elements in the vector there are, you can use the function `length`. Read the help file for the function for more guidance.
 
-```{r myvec, exercise = T}
+```{r myvec, exercise = TRUE}
 myvector <- c(1, 3, 6, 9)
 myvector
 
@@ -52,7 +52,7 @@ length(myvector)
 
 To access a particular element, you can use square brackets.
 
-```{r myvec2, exercise = T}
+```{r myvec2, exercise = TRUE}
 myvector <- c(1, 3, 6, 9)
 
 myvector[2]
@@ -78,7 +78,7 @@ gradethis::grade_code()
 
 What are the dimensions of the following matrix? Use `dim` to find out. Read the help file for the function for more guidance on what this function returns if it isn't clear from the following example.
 
-```{r makeMatrix, exercise = T}
+```{r makeMatrix, exercise = TRUE}
 mymatrix <- matrix(c(1, 2, 3, 4, 5, 6), nrow = 3)
 
 dim(___)
@@ -99,7 +99,7 @@ gradethis::grade_code()
 We can access specific rows of a matrix with `[,]` - for example, `mymatrix[2,]` will present the second row of the matrix, and `mymatrix[c(2,3),]` will yield a new matrix with the second and third rows of the original only.
 
 
-```{r makeMatrix2, exercise = T}
+```{r makeMatrix2, exercise = TRUE}
 mymatrix <- matrix(c(1, 2, 3, 4, 5, 6), nrow = 3)
 
 mymatrix[c(2,3),]
@@ -107,7 +107,7 @@ mymatrix[c(2,3),]
 
 Assign the first row of `mymatrix` to a variable named `row1`. Use the function `summary()` to  find the minimum and maximum of this row. Consult the help files for `summary` if necessary.
 
-```{r matrixWork, exercise = T}
+```{r matrixWork, exercise = TRUE}
 mymatrix <- matrix(c(1, 2, 3, 4, 5, 6), nrow = 3)
 
 ___ <- mymatrix[___]
@@ -128,7 +128,7 @@ gradethis::grade_code()
 
 To get a single element in a matrix, we use row and column numbers, such as `mymatrix[r,c]`. This will also extract a submatrix if multiple entries are used for each.
 
-```{r matrixWork2, exercise = T}
+```{r matrixWork2, exercise = TRUE}
 mymatrix <- matrix(c(1, 2, 3, 4, 5, 6), nrow = 3)
 
 mymatrix[1,2]
@@ -137,7 +137,7 @@ mymatrix[1,2]
 Display the submatrix that contains the first two rows and second column of `mymatrix`. 
 
 
-```{r matrixWork3, exercise = T}
+```{r matrixWork3, exercise = TRUE}
 mymatrix <- matrix(c(1, 2, 3, 4, 5, 6), nrow = 3)
 
 mymatrix[___, ___]
@@ -159,7 +159,7 @@ gradethis::grade_code()
 
 We can also ask questions about our data/variables. The `==` sign is a True/False test of equality. e.g. `row2 == 1` returns `TRUE` for every element in row2 that is equal to 1, and `FALSE` for elements different than 1. We can do similar things with the symbols `<`, `<=`, `>`, `>=`. 
 
-```{r log, exercise = T}
+```{r log, exercise = TRUE}
 row2 <- c(1, 2, 3, 1)
 
 row2 == 1
@@ -168,7 +168,7 @@ row2 == 1
 
 You can also combine two conditions with the AND (`&`) and OR (`|`) operators.
 
-```{r log2, exercise = T}
+```{r log2, exercise = TRUE}
 row2 <- c(1, 2, 3, 1)
 col3 <- c(1, 1, 3, 2)
 
@@ -206,7 +206,7 @@ We can use these conditions to select subsets.
 
 Return the values in `col1` where the corresponding values of `col3` equal 1.
 
-```{r subset1, exercise = T}
+```{r subset1, exercise = TRUE}
 col1 <- c(4, 5, 6, 4)
 col3 <- c(1, 1, 3, 2)
 
@@ -228,7 +228,7 @@ gradethis::grade_code()
 
 We can analyze these subsets as well. Compute the average of only the `col3` values for whom the corresponding `col1` values are 4.
 
-```{r subset2, exercise = T}
+```{r subset2, exercise = TRUE}
 col1 <- c(4, 5, 6, 4)
 col3 <- c(1, 1, 3, 2)
 
@@ -251,7 +251,7 @@ gradethis::grade_code()
 
 Find the minimum of the values in col1 whose col3 values are less than 15.
 
-```{r subset3, exercise = T}
+```{r subset3, exercise = TRUE}
 col1 <- c(4, 5, 6, 4)
 col3 <- c(10, 10, 30, 2)
 
@@ -283,7 +283,7 @@ As you have gone through this tutorial, your progress has been kept track of in 
 If a Google Form window does not appear, you can access it [here](https://docs.google.com/forms/d/e/1FAIpQLSfvykYtPyuvOarOj3Qi48cXMiQcg5GmFvuq2f_3-mq5n4PNnA/viewform?usp=sf_link).
 
 ```{r context="server"}
-learnrhash::encoder_logic(strip_output = T)
+learnrhash::encoder_logic(strip_output = TRUE)
 ```
 
 ```{r encode, echo=FALSE}
