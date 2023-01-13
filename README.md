@@ -1,7 +1,7 @@
 # StatTheoryLabs   
 learnr tutorials and labs for a mathematical statistics course
 These labs were originally adapted from labs by [Dr. Sara Stoudt](https://sastoudt.github.io/). 
-This repo was forked from her [original one](https://github.com/sastoudt/StatTheoryLabs). Minor implementation edits for Spring 2023 by Sanogo.
+This repo was forked from her [original one](https://github.com/sastoudt/StatTheoryLabs). Implementation edits for Spring 2023 by Sanogo.
 
 ### To install this package:
 
