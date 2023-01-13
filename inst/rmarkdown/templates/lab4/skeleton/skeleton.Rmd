@@ -1,7 +1,6 @@
 ---
 title: "Lab 4 Template"
 author: "Your Name"
-date: "4/6/2022"
 output: html_document
 ---
 
@@ -281,4 +280,4 @@ ggplot(transformed_data, aes(x = site_number, y = Level)) +
 
 * * *
 
-This lab was created by A. Flynt and was adapted by S. Stoudt.
+This lab was created by A. Flynt and was adapted by S. Stoudt and edits by Fatou Sanogo.
