@@ -40,7 +40,7 @@ Loops will be an important part of many future labs and the final project. Take 
 
 A simple for loop has the following structure:
 
-```{r loopEx, exercise = T}
+```{r loopEx, exercise = TRUE}
 n <- 5
 
 for(i in 1:n){
@@ -68,7 +68,7 @@ question("What would the for loop above do",
 
 In this class, we will often want to work with probability distributions. 
 
-```{r loopEx2, exercise = T}
+```{r loopEx2, exercise = TRUE}
 n <- 5
 sample_size <- 3
 
@@ -96,7 +96,7 @@ question("What is in x at the end of the above for loop",
 
 $$\sum_{i=0}^4 3i$$
 
-```{r sum, exercise = T}
+```{r sum, exercise = TRUE}
 total <- 0 ## start the total at zero
 
 for(j in 0:4){ ## for index j in 0 through 4
@@ -120,7 +120,7 @@ Go through the code annotation process for the following code chunk.
 
 $$\prod_{i=1}^4 2i$$
 
-```{r prod, exercise = T}
+```{r prod, exercise = TRUE}
 total <- 1 ## do you understand why this starts at 1?
 
 for(i in 1:4){
@@ -138,7 +138,7 @@ length(total)
 ## Simulate and Store Data
 
 
-```{r sim, exercise = T}
+```{r sim, exercise = TRUE}
 num_sim <- 5 
 sample_size <- 3
 
@@ -181,7 +181,7 @@ question("What function should we use to determine the size of stored_data?",
 
 Go through the code annotation process for the following code chunk.
 
-```{r sim2, exercise = T}
+```{r sim2, exercise = TRUE}
 num_sim <- 5
 sample_size <- 3
 
