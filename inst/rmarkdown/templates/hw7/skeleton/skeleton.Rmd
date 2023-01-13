@@ -1,7 +1,6 @@
 ---
 title: 'HW 7: Template'
 author: "Your Name"
-date: "1/31/2022"
 output: html_document
 ---
 
