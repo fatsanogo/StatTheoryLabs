@@ -115,7 +115,7 @@ ggplot(subset(sim_study_output, param1 != param2), aes(x = sample_size, y = powe
 
 ## Deliverables
 
-Submit your R Markdown document and knitted file to Moodle as:
+Submit your R Markdown document and knitted file to lyceum as:
 
 LastName-CT-07.Rmd 
 
