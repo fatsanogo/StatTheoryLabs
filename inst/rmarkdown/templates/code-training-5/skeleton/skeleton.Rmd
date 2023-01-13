@@ -1,7 +1,6 @@
 ---
 title: "Code Training 5"
 author: "Your Name"
-date: "3/21/2022"
 output: html_document
 ---
 
@@ -79,12 +78,8 @@ dim(test_data)
 
 ## Deliverables
 
-Submit your R Markdown document and knitted file to Moodle as:
+Submit your R Markdown document and knitted file to lyceum as:
 
 LastName-CT-05.Rmd 
 
-LastName-CT-05.html
-
-To get these files onto your own computer, look in the "Files" pane in the bottom right. Check the boxes next to the two files you want to export, click the "More" button (with a little blue gear), click "Export". Make sure you are exporting the files to a place where you can find them on your own computer. 
-
-*Due*: Monday, March 21st before class
+LastName-CT-05.html 
