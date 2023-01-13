@@ -1,7 +1,6 @@
 ---
 title: "Lab 1: Template"
 author: "Your Name"
-date: "2/14/2022"
 output: html_document
 ---
 
