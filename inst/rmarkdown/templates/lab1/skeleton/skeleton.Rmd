@@ -250,7 +250,7 @@ Read [this blog post](https://ecologyforthemasses.com/2021/09/20/have-i-seen-you
 
 ## Resources
 
-This learnr tutorial was developed by S. Stoudt but pulls materials from a variety of sources.
+This learnr tutorial was developed by S. Stoudt and edited by Fatou Sanogo but pulls materials from a variety of sources.
 
 - [Rushing Lab course materials](https://rushinglab.github.io/WILD3810/articles/Lecture2/lecture2.html#1)
 - [Ogle's capture-recapture notes](https://derekogle.com/NCNRS349/modules/MarkRecap/BKG)
