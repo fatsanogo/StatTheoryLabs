@@ -14,72 +14,57 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup, message=FALSE, eval=FALSE}
+```{r setup}
 library(StatTheoryLabs)
 ```
 
-## Logistics
+## R Studio Cloud
 
-This pre-lab will be done indivdually and in advance of the first lab. Ideally, everyone will come to the first lab knowing how to use the RStudio and have R and RStudio installed on their own computer. Get through as many steps as you can before the first lab, but we can troubleshoot during the lab if need be.
+We will be using R and RStudio in this class for some homework questions, and labs. R is a statistical software used by many data professionals to wrangle, visualize, and analyze data. RStudio is the interface for interacting with the software.
 
-## The RStudio Interface
+We have access to RStudio via a cloud service. This means that you do not need to install any software on your personal device. Instead, you can access this software via a browser using your Bates credentials.
 
-The goal of this pre-lab is to introduce you to R and RStudio, which you'll be using throughout the course both to learn the statistical concepts discussed in the course and to analyze real data and come to informed conclusions. 
-To clarify which is which: R is the name of the programming language itself and RStudio is a convenient interface.
+**Task**: Go to [rstudio-join.bates.edu](https://posit.cloud/spaces/325650/join?access_code=62RpioN77vC7Ypl43meHUTkrO02LOlADWMLm2RLG) and log in and join our course workspace. Note that the link above is to join the workspace which you only have to do once. Once you have joined you can now log in to your rstudio workspace using your Bates credential by going to [rstudio-could-MA215](https://posit.cloud/content/yours?sort=name_asc).
 
-As the labs progress, you are encouraged to explore beyond what the labs dictate; a willingness to experiment will make you a much better programmer. 
-Before we get to that stage, however, you need to build some basic fluency in R. 
-Today we begin with the fundamental building blocks of R and RStudio: the interface, reading in data, and basic commands.
+## Cloud Workspace
 
-## Dowloading R and RStudio on your own computer
+Once you are logged in you should see something like this:
 
+![](cloud-opener.png)
 
-1. Download R [here](https://cran.r-project.org/mirrors.html). Choose the CRAN mirror site that is closest to you. In the box labeled "Download and Install R," click the link corresponding to your operating system.
-
-2. Download RStudio by clicking on the "Download" button under the free version of RStudio Desktop [here](https://rstudio.com/products/rstudio/download/). Check that the recommended version matches your operating system and click the "Download RStudio for..." button.
-
-1. Check that it worked by launching RStudio. You should see a window that looks like the image shown below.
-
-![](r-interface-2020.png)
-Note: These download instructions are adapted from [this blog post](https://towardsdatascience.com/how-to-install-r-and-rstudio-584eeefb1a41).
-<!-- First, you will need to download both R and RStudio for class. See [here](https://courses.edx.org/courses/UTAustinX/UT.7.01x/3T2014/56c5437b88fa43cf828bff5371c6a924/) for installation instructions on Mac and PC. You have two options for using RStudio: -->
+![](cloud-next.png).
 
 ## RStudio Orientation
 
 **Task**: To understand the layout that you should now see, read 1.3 [here](https://intro2r.com/rstudio_orient.html).
 
-### R Packages
+## Exporting Files From the Server
 
-R is an open-source programming language, meaning that users can contribute packages that make our lives easier, and we can use them for free. 
-For this lab, and many others in the future, we will use the following R packages:
+For things like labs you will need to export files from the R server to your personal computer so that you can turn in the files on lyceum. To do this, put a check mark by the file names that you want to download (in the bottom right panel). Click the "More" button and then choose "Export". This will cause a zip file to be dowloaded to your computer. You can unzip this folder (double click on it) to retrieve your documents. 
 
-- The suite of **tidyverse** packages: for data wrangling and data visualization
-- **openintro**: for data and custom functions with the OpenIntro resources
+![](export.png)
 
-You need to install those packages by typing `install.packages()`. Run the following two lines in your console (bottom left panel).
+## Importing Files to the Server 
 
-```{r install-packages, message=FALSE, eval=FALSE}
-install.packages("tidyverse")
-install.packages("openintro")
-```
+If you have a file on your personal computer (like a dataset) that you want to have access to in your RStudio project, you can import it.
 
-Load these packages in your working environment. We do this with the `library` function. Run the following two lines in your console (bottom left panel).
+![](import.png)
 
-```{r load-packages, message=FALSE}
-library(tidyverse)
-library(openintro)
-```
+## Packages
 
-You only need to *install* packages once, but you need to *load* them using `library` each time you relaunch RStudio. 
+In R, some functionality lives in "packages" of code that other people have developed and shared. We need to install packages so they are available in our R environment only once. I have installed the packages that you will need. You can check to see which packages (and which versions) are installed by inspecting the *Packages* tab in the lower right panel of RStudio. 
 
-The Tidyverse packages share common philosophies and are designed to work together. 
-You can find more about the packages in the tidyverse at [tidyverse.org](http://tidyverse.org/).
+To use the functionality in a given session, we need to load the package by using the `library` command. 
+
+**Task**: Load the package that has the tutorials in it by typing `library(StatTheoryLabs)`into the console and then pressing the "enter" or "return" key.
+
+![](library.png)
 
 ## Interactive Tutorials
 
 The coding trainings will often take the form of an interactive tutorial that will step you through new code and ask you to fill in exercises. These tutorials can give you automated feedback and are meant to help you as you independently build up your coding skills.
 
-**Task**: To learn about how these work, access (and complete) the first tutorial by following the steps described [here](https://github.com/fatsanogo/StatTheoryLabs).
+**Task**: To learn about how these work, access (and complete) the first tutorial by typing `learnr::run_tutorial("ct-1", "StatTheoryLabs")`into the console and then pressing the "enter" or "return" key. 
 
 A pop-up window should appear. If it does not, you may have a pop-up blocker issue:
 
