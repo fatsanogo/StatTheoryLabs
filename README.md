@@ -63,6 +63,7 @@ Click "Session" --> "Restart R" and try to run the tutorial again.
 
 ## Available Tutorials
 
+- "first-day": first day activity to guess the color
 - "ct-1": code training 1 - intro to interactive tutorials
 - "ct-2": code training 2 - structures and subsetting
 - "ct-3": code training 3 - loops
