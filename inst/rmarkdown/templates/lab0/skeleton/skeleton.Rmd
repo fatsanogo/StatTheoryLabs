@@ -146,6 +146,8 @@ LastName-L-00.Rmd
 
 LastName-L-00.html
 
+Remember, to get these files onto your own computer, look in the "Files" panel in the bottom right. Check the boxes next to the two files you want to export, click the "More" button (with a little blue gear), click "Export". Make sure you are exporting the files to a place where you can find them on your own computer. 
+
 
 ## References 
 
