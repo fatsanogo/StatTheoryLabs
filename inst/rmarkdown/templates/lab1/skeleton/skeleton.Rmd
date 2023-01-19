@@ -80,6 +80,8 @@ LastName-L-01.Rmd
 
 LastName-L-01.html
 
+To get these files onto your own computer, look in the "Files" pane in the bottom right. Check the boxes next to the two files you want to export, click the "More" button (with a little blue gear), click "Export". Make sure you are exporting the files to a place where you can find them on your own computer. 
+
 ## What does capture-recapture data tell us about the detection probability?
 
 We're in the field trying to estimate the abundance $N$ of deer. On our first day we capture $n_1$ individuals. What proportion of the total number of individuals is $n_1$?
