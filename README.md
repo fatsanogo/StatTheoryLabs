@@ -63,7 +63,6 @@ Click "Session" --> "Restart R" and try to run the tutorial again.
 
 ## Available Tutorials
 
-- "first-day": first day activity to guess the color
 - "ct-1": code training 1 - intro to interactive tutorials
 - "ct-2": code training 2 - structures and subsetting
 - "ct-3": code training 3 - loops
@@ -85,10 +84,9 @@ Click "Session" --> "Restart R" and try to run the tutorial again.
 - "code-training-7": Simulation Scenarios and Preliminary Plots
 - "code-training-8": Tidy Data and Better Plots
 - "intro-np": introduction to nonparametrics
-- "intro-project": introduction to final project
 - "hw7": optimization for bivariate MLE
 
-(under development and updating for Spring 2022)
+(under development and updating for Spring 2023)
 
 ## How to Submit Google Form portion of Lab
 
@@ -100,7 +98,7 @@ Note: your Google form might look a little different, but the instructions stay 
 
 I can't see the Google Form at the end. 
 
-Open in the browser (this should happen automatically if you use `run_tutorial` ), use Google Chrome, and make sure you are logged in to your Bucknell e-mail in the same browser (only Bucknell authenticated accounts can access the form to avoid any spam).
+Open in the browser (this should happen automatically if you use `run_tutorial` ), use Google Chrome, and make sure you are logged in to your Bates email in the same browser (only Bates authenticated accounts can access the form to avoid any spam).
 
 **Run into any problems not listed above? Let me know and when we figure it out we'll add to the list.**
 
