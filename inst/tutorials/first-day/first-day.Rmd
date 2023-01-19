@@ -32,7 +32,7 @@ generateColor <- function(num){
 
 I have a function that returns either "red" or "green". We don't know anything else about it. 
 
-```{r, one-light, exercise = T}
+```{r, one-light, exercise = TRUE}
 generateColor(1)
 ```
 
@@ -42,7 +42,7 @@ generateColor(1)
 
 It might be helpful to see more observations to better understand the function `generateColor`.
 
-```{r, more-obs, exercise = T}
+```{r, more-obs, exercise = TRUE}
 generateColor(10)
 ```
 
@@ -51,7 +51,7 @@ generateColor(10)
 
 So we've learned that `generateColor` produces "green" about 75% of the time and "red" about 25% of the time. 
 
-```{r, student-strategy, exercise = T}
+```{r, student-strategy, exercise = TRUE}
 
 
 ```
@@ -67,7 +67,7 @@ So we've learned that `generateColor` produces "green" about 75% of the time and
 
 What if we just stuck with the most likely outcome each time and always picked "green"?
 
-```{r, strat1, exercise = T}
+```{r, strat1, exercise = TRUE}
 obs <- generateColor(1000)
 guess <- rep("green", 1000)
 ```
@@ -80,7 +80,7 @@ guess <- rep("green", 1000)
 
 We can double check our calculations by using simulation. 
 
-```{r, strat1-perf, exercise = T}
+```{r, strat1-perf, exercise = TRUE}
 obs <- generateColor(50)
 guess <- rep("green", 50)
 
@@ -95,13 +95,13 @@ sum(obs == guess)/50
 
 **How could I make this empirical estimate more accurate?**
 
-```{r, strat1-perf2, exercise = T}
+```{r, strat1-perf2, exercise = TRUE}
 
 ```
 
 ## Strategy 2
 
-```{r, strat2, exercise = T}
+```{r, strat2, exercise = TRUE}
 obs <- generateColor(1000)
 
 guess <- rbinom(1000, 1, prob = 0.75)
@@ -118,7 +118,7 @@ guess <- ifelse(guess == 1, "green", "red")
 
 We can double check our calculations by using simulation. 
 
-```{r, strat2-perf, exercise = T}
+```{r, strat2-perf, exercise = TRUE}
 obs <- generateColor(50)
 
 guess <- rbinom(50, 1, prob = 0.75)
@@ -133,7 +133,7 @@ sum(obs == guess)/50
 
 ## Does anyone have a different strategy?
 
-```{r, your-strat, exercise = T}
+```{r, your-strat, exercise = TRUE}
 obs <- generateColor(1000)
 guess <-
 
@@ -148,7 +148,7 @@ sum(obs == guess)/50
 
 We have a random variable that represents whether or not we get the next guess correct. What is the variance of that random variable in both scenarios?
 
-```{r, var, exercise = T}
+```{r, var, exercise = TRUE}
 obs <- generateColor(1000)
 
 guess1 <- rep("green", 1000)
@@ -164,6 +164,6 @@ var(obs == guess2)
 
 * * *
 
-This lab was adapted and learnr-ified by S. Stoudt from the Can You "Beat" Randomness (Zieffler and Catalysts for Change 2013) activity and the adaptation of this activity (Green and Blankenship 2015).
+This lab was adapted and learnr-ified by S. Stoudt from the Can You "Beat" Randomness (Zieffler and Catalysts for Change 2013) activity and the adaptation of this activity (Green and Blankenship 2015). Implementation edits by Fatou Sanogo
 
 
