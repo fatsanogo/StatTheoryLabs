@@ -295,8 +295,6 @@ b.) Compute the sampling distribution for the maximum of a sample of size 200 fr
 
 c.) Repeat part b for samples of size 50. Make a histogram of this distribution. Describe the shape, center, and spread of this distribution and compare it to what you found in part b.
 
-Note: If Chapter 7 helped clarify your thinking about sampling distributions.
-
 * * *
 
 This lab was created by A. Flynt and was adapted by S. Stoudt and edited by Fatou Sanogo.
