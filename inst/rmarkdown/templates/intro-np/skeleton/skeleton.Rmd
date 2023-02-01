@@ -47,7 +47,7 @@ We can specify the vector `x` in a number of ways. For example...
     
 ### Exercise 1 
 
-There are **7** people in this class, including Prof. Stoudt. Let's suppose each person in the class is assigned a different number from 1 through 7. Using `sample()`, randomly select four numbers from this list, **with replacement**. 
+There are **9** people in this class, including Prof. Sanogo. Let's suppose each person in the class is assigned a different number from 1 through 9. Using `sample()`, randomly select four numbers from this list, **with replacement**. 
 
 ```{r}
 
