@@ -26,7 +26,7 @@ As you learn about R code you will encounter code chunks that you don't fully un
   
 1. Do an initial reading of each code chunk. Note any questions that pop into your head. If you do this inline, use a hashtag (#) to add a comment.
     
-2. Identify any functions you do not understand and look them up using the help function `help(function_name)` or the "Help" tab in the bottom right pane. Make sure you understand the input paramters and the form of the output. 
+2. Identify any functions you do not understand and look them up using the help function `help(function_name)` or the "Help" tab in the bottom right pane. Make sure you understand the input parameters and the form of the output. 
     
 3. Identify any overall structure. Is a subtask repeated multiple times? How many times?
       
