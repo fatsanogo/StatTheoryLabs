@@ -1,5 +1,5 @@
 ---
-title: 'Lab 2: Template'
+title: 'Lab 1: Template'
 author: "Your Name"
 output: html_document
 ---
@@ -8,13 +8,13 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Some logistics for Lab 2
+## Some logistics for Lab 1
 
-Submit your R Markdown document and knitted file to Moodle as:
+Submit your R Markdown document and knitted file to lyceum as:
 
-LastName-L-02.Rmd 
+LastName-L-01.Rmd 
 
-LastName-L-02.html
+LastName-L-01.html
 
 To get these files onto your own computer, look in the "Files" pane in the bottom right. Check the boxes next to the two files you want to export, click the "More" button (with a little blue gear), click "Export". Make sure you are exporting the files to a place where you can find them on your own computer.
 
@@ -139,11 +139,11 @@ hist(my_min)
 
 ```
 
-**c.)** Let $X_1, X_2, ... X_10 \sim^{iid} N(20, 8^2)$ and $Y_1, Y_2, ... Y_15 \sim^{iid} N(16, 7^2)$. Let $W = \bar{X}+\bar{Y}$. 
+**c.)** Let $X_1, X_2, ... X_10 \sim^{iid} N(20, 8^2)$ and $Y_1, Y_2, ... Y_15 \sim^{iid} N(16, 7^2)$. Let $W = \bar{X}-\bar{Y}$. 
 
 Note: There are 10 values for $X$ and 15 for $Y$.
 
-**(i)** Give the exact sampling distribution of $W$ (this is not a coding question).
+**(i)** Give the exact sampling distribution of $W$ (this is not a coding question). Hint: exercise 8.3 might be helpful.
 
 **(ii)** Simulate an approximate sampling distribution and plot your results. Check that the simulated mean and standard error are close to the theoretical mean and standard error from (i). Your code should be of the form:
 
@@ -233,9 +233,9 @@ sd(my_means)
 
 ## Question #4
 
-We claimed in class that the sample mean and the sample variance are independent if an only if the sample is drawn from a Normal distribution. The proof of this result is relatively complicated, but we will try to verify it with simulations.
+We claimed in class that the sample mean and the sample variance are independent if and only if the sample is drawn from a Normal distribution (Theorem 8.11). The proof of this result is relatively complicated, but we will try to verify it with simulations.
 
-**a.)** Create a `for` loop of 1000 replications that first samples 200 observations from a $N(1, 1)$, and then calculates and stores the sample mean and sample variance of each set of simulated data. This should leave you with 1000 means and 1000 variances.
+**a.)** Create a `for` loop of 1000 replications that first samples 200 observations from a $Normal(1, 1)$, and then calculates and stores the sample mean and sample variance of each set of simulated data. This should leave you with 1000 means and 1000 variances.
 
 ```{r}
 num_sim <- 
@@ -268,7 +268,7 @@ cor(my_means, my_vars)
 
 **d.)** Using the scatterplot produced and the correlation calculated, comment on the independence between the sample mean and the sample variance.
 
-Note: although a correlation of zero does not always imply independence, we will interpret it as such here. Recall that correlation is a real number between -1 and 1, where -1 is a perfect negative linear relationship and 1 is a perfect positive linear relationship.
+Note: although a correlation of zero does not always imply independence, we will interpret it as such here. Recall that correlation is a real number between -1 and 1, where -1 is a perfect negative linear relationship, 1 is a perfect positive linear relationship, and 0 means no correlation.
 
 **e.)** Repeat (a) - (d), this time generating data from an Exponential(1). Note: the mean and variance of this distribution are both 1, just like for the data simulated in (a).
 
@@ -295,7 +295,7 @@ b.) Compute the sampling distribution for the maximum of a sample of size 200 fr
 
 c.) Repeat part b for samples of size 50. Make a histogram of this distribution. Describe the shape, center, and spread of this distribution and compare it to what you found in part b.
 
-Note: If Chapter 7 helped clarify your thinking about sampling distributions, Chapter 8 and 9 also provide another perspective on the bootstrap and hypothesis tests that might similarly help you.
+Note: If Chapter 7 helped clarify your thinking about sampling distributions.
 
 * * *
 
