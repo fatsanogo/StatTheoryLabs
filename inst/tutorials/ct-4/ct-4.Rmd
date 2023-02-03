@@ -48,7 +48,7 @@ plot(simulated_data$x, simulated_data$y, main = "title", xlab = "x", ylab = "y")
 
 ## Normal, t, chi-squared
 
-These distributions will be very useful to you in your final project. It is important to understand their properties to know how to use them. The best way to learn about them is to generate data from them with different values for the parameters and plot their distributions to notice their similarities and differences. 
+These distributions will be very useful to you as we progress in the course. It is important to understand their properties to know how to use them. The best way to learn about them is to generate data from them with different values for the parameters and plot their distributions to notice their similarities and differences. 
 
 ```{r dist, exercise = TRUE}
 
@@ -153,7 +153,7 @@ question("If two chi-squared distributions have the same degrees of freedom:",
 ## Fancier Plots - ggplot
 
 
-When we are working quickly it can be nice to make simple plots, but we will want more professional looking graphs for the final project. You need to load the `tidyverse` package before using this functionality. 
+When we are working quickly it can be nice to make simple plots, but we will want more professional looking graphs for the . You need to load the `tidyverse` package before using this functionality. 
 
 With `ggplot()`:
 
