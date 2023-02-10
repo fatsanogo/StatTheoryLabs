@@ -297,5 +297,5 @@ c.) Repeat part b for samples of size 50. Make a histogram of this distribution.
 
 * * *
 
-This lab was created by A. Flynt and was adapted by S. Stoudt and edited by Fatou Sanogo.
+This lab was created by A. Flynt, adapted by S. Stoudt, and edited by Fatou Sanogo.
 
