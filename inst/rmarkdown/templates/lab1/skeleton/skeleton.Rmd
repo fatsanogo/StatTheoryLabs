@@ -8,16 +8,13 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Some logistics for Lab 1
+## Evaluation
 
-Submit your R Markdown document and knitted file to lyceum as:
+Recall that I'm not going to grade the lab for accuracy, I will just check to see if you have made a good attempt at it. I will post solutions after grading, but it will be helpful to you if you try to work through the lab before checking the solutions.
 
-LastName-L-01.Rmd 
+Places where the line starts with #### 1. (or similar) are places where I'm asking you to do something.
 
-LastName-L-01.html
-
-To get these files onto your own computer, look in the "Files" pane in the bottom right. Check the boxes next to the two files you want to export, click the "More" button (with a little blue gear), click "Export". Make sure you are exporting the files to a place where you can find them on your own computer.
-
+You should definitely feel free to work through this with someone else and just submit one version of the lab.  In that case, just put both of your names at the top of the document. Make sure sure you and your partner submit on lyceum even if it is the same file.
 
 ##  Sampling Distributions
 
@@ -239,6 +236,18 @@ Note: although a correlation of zero does not always imply independence, we will
 **f.)** Do your simulations agree with the Theorem?
 
 Note: If you are not yet convinced, I encourage you to try with samples from other distributions and/or different sample sizes and/or more replications.
+
+
+## Some logistics for Lab 1
+
+Submit your R Markdown document and knitted file to lyceum as:
+
+LastName-L-01.Rmd 
+
+LastName-L-01.html
+
+To get these files onto your own computer, look in the "Files" pane in the bottom right. Check the boxes next to the two files you want to export, click the "More" button (with a little blue gear), click "Export". Make sure you are exporting the files to a place where you can find them on your own computer.
+
 
 ## Opportunity for Extra Credit
 
