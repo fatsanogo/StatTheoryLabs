@@ -75,8 +75,8 @@ Click "Session" --> "Restart R" and try to run the tutorial again.
 ## Available Templates
 
 - "lab0": reproducibility and documentation
-- "lab1": estimation (capture-recapture)
-- "lab2": sampling distributions
+- "lab1": sampling distributions
+- "lab2": Chi_sq-F-T distributions
 - "lab3": bootstrap
 - "lab4": confidence intervals
 - "lab5": hypothesis testing
