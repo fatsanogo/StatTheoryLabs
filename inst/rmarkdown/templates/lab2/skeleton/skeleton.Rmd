@@ -67,15 +67,23 @@ pnorm(2, mean = 2, sd = 0.1)
 
 ## Stuff for you to do
 
-#### 1. Create a data frame with 5 variables in it called `x1`, `x2`, `x3`, `x4`, and `x5`.  To start with, draw a sample of size $n = 1$ for each of these, from a Normal(0, 1) distribution.
+#### 1. Below I created a data frame with 5 variables in it called `x1`, `x2`, `x3`, `x4`, and `x5` and draw a sample of size $n = 1000$ for each of these variables, from a Normal(0, 1) distribution. Perform the code annotation steps on the code chunk below (see lab 1 template for code annotation steps)
 
 ```{r}
-# your code goes here
+set.seed(77926)
+sample_data <- data.frame(
+  x1 = rnorm(n = 1000, mean = 0, sd = 1),
+  x2 = rnorm(n = 1000, mean = 0, sd = 1),
+  x3 = rnorm(n = 1000, mean = 0, sd = 1),
+  x4 = rnorm(n = 1000, mean = 0, sd = 1),
+  x5 = rnorm(n = 1000, mean = 0, sd = 1)
+)
 ```
 
-#### 2. Create a new variable in your data frame called `u`, calculated as `x1^2 + x2^2 + x3^2`.  What is the distribution of the random variable U we have sampled from?
+#### 2. Create a new variable in your data frame called `u`, calculated as `x1^2 + x2^2 + x3^2`. Hint: see step 3 above (Example code to start with section). What is the distribution of the random variable U we have sampled from?
 
 ```{r}
+# your code here
 ```
 
 
