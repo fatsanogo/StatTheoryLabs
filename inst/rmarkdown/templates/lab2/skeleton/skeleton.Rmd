@@ -67,56 +67,66 @@ pnorm(2, mean = 2, sd = 0.1)
 
 ## Stuff for you to do
 
-#### 1. Below I created a data frame with 5 variables in it called `x1`, `x2`, `x3`, `x4`, and `x5` and draw a sample of size $n = 1000$ for each of these variables, from a Normal(0, 1) distribution. Perform the code annotation steps on the code chunk below (see lab 1 template for code annotation steps)
+#### 1. Below I created a data frame with 5 variables in it called `x1`, `x2`, `x3`, `x4`, and `x5` and draw a sample of size $n = 1$ for each of these variables, from a Normal(0, 1) distribution. Perform the code annotation steps on the code chunk below (see lab 1 template for code annotation steps)
 
 ```{r}
 set.seed(77926)
 sample_data <- data.frame(
-  x1 = rnorm(n = 1000, mean = 0, sd = 1),
-  x2 = rnorm(n = 1000, mean = 0, sd = 1),
-  x3 = rnorm(n = 1000, mean = 0, sd = 1),
-  x4 = rnorm(n = 1000, mean = 0, sd = 1),
-  x5 = rnorm(n = 1000, mean = 0, sd = 1)
+  x1 = rnorm(n = 1, mean = 0, sd = 1),
+  x2 = rnorm(n = 1, mean = 0, sd = 1),
+  x3 = rnorm(n = 1, mean = 0, sd = 1),
+  x4 = rnorm(n = 1, mean = 0, sd = 1),
+  x5 = rnorm(n = 1, mean = 0, sd = 1)
 )
 ```
 
-#### 2. Create a new variable in your data frame called `u`, calculated as `x1^2 + x2^2 + x3^2`. Hint: see step 3 above (Example code to start with section). What is the distribution of the random variable U we have sampled from?
+#### 2. Create a new variable in your data frame called `u`, calculated as `x1^2 + x2^2 + x3^2`. Hint: see step 3 above (Example code to start with section). What is the distribution of the random variable U we have sampled from? Justify your answer using class notes or your textbook. Also, if distribution requires has df please state what that will be.
 
 ```{r}
-# your code here
+# your code goes here
 ```
 
 
 
-#### 3. Create a new variable in your data frame called `v`, calculated as `x4^2 + x5^2`.  What is the distribution of the random variable V we have sampled from?
+#### 3. Create a new variable in your data frame called `v`, calculated as `x4^2 + x5^2`. Hint: see step 3 above (Example code to start with section) What is the distribution of the random variable V we have sampled from? Justify your answer using class notes or your textbook. Also, if distribution requires has df please state what that will be.
+
 
 ```{r}
+# your code goes here
 ```
 
 
 
-#### 4. Create a new variable in your data frame calculated as `x4 / sqrt(u/3)`.  What is the distribution of this random variable?  Give the variable an appropriate name to reflect the distribution it comes from.
+#### 4. Create a new variable in your data frame calculated as `x4 / sqrt(u/3)`.  What is the distribution of this random variable?  Give the variable an appropriate name to reflect the distribution it comes from. Justify your answer using class notes or your textbook.
 
 ```{r}
+# your code goes here
 ```
 
 
 
-#### 5. Create a new variable in your data frame calculated as `(v/2) / (u/3)`.  What is the distribution of this random variable?  Give the variable an appropriate name to reflect the distribution it comes from.
+#### 5. Create a new variable in your data frame calculated as `(v/2) / (u/3)`.  What is the distribution of this random variable?  Give the variable an appropriate name to reflect the distribution it comes from. Justify your answer using class notes or your textbook.
 
 ```{r}
+# your code goes here
 ```
 
 
 
-#### 6. At this point your data frame should have one row and 9 columns.  Verify that that's correct.  Then, go back to step 1 and change your sample size from $n = 1$ to $n = 1000$, and re-run all of your code chunks above in order.  Now instead of having one sample from a Normal(0, 1) distribution for `x1`, you'll have 1000 samples.  Verify that your data frame now has 1000 rows and 9 columns.
+#### 6. At this point your data frame should have one row and 9 columns.  Verify that that's correct. Then, go back to step 1 and change your sample size from $n = 1$ to $n = 1000$, and re-run all of your code chunks above in order. Now instead of having one sample from a Normal(0, 1) distribution for `x1`, you'll have 1000 samples.  Verify that your data frame now has 1000 rows and 9 columns.
 
 ```{r}
+#your code goes here
+# you can do that by using the functions: View(data frame name) and dim(data frame name)
 ```
 
-#### 7. Create a density histogram of the 1000 sample values for the variable you created in step 4.  In a second layer, overlay a plot of the pdf for the distribution you chose.  In a third layer, overlay a plot of the pdf of a Normal(0, 1) distribution using a different color.
+#### 7. In the chunk below, we are creating a density histogram of the 1000 sample values for the variable you created in step 4.  In a second layer, a we have a plot of the pdf for the distribution. In a third layer, a plot of the pdf of a Normal(0, 1) distribution using a different color. Play with this code by plotting the other distributions you have above.
 
 ```{r}
+ggplot(data = sample_data, mapping = aes(x = t)) +
+  geom_histogram(mapping = aes(y = ..density..), fill = "cornflowerblue") +
+  stat_function(fun = dt, args = list(df = 3), color = "orange") +
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1), color = "purple")
 ```
 
 
@@ -124,6 +134,7 @@ sample_data <- data.frame(
 #### 8. Using the `pt` function, calculate the probability that a random variable that follows a t distribution with 3 degrees of freedom will be larger than 2.  Repeat this calculation, but for a Normal(0, 1) distribution.
 
 ```{r}
+#your code goes here
 ```
 
 #### 9.  Based on your histogram from part 7 and your result from part 8, sum up the similarities and differences between a t distribution and a Normal(0, 1) distribution in a sentence or two.
@@ -133,6 +144,8 @@ sample_data <- data.frame(
 #### 10. (If time) Create density histograms of the 1000 sample values for the variables you created in steps 2 and 5, along with plots of the pdfs for those random variables.
 
 ```{r}
+#your code goes here
+#hint the code from step 7 might be useful.
 ```
 
 ## Some logistics for Lab 2
