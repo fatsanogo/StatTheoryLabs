@@ -15,7 +15,7 @@ Recall that I'm not going to grade the lab for accuracy, I will just check to se
 
 Places where the line starts with #### 1. (or similar) are places where I'm asking you to do something.
 
-You should definitely feel free to work through this with someone else and just submit one version of the lab.  In that case, just put both of your names at the top of the document. Make sure sure you and your partner submit on lyceum even if it is the same file.
+You should definitely feel free to work through this with someone else and just submit one version of the lab.  In that case, just put both of your names at the top of the document. Make sure you and your partner submit on lyceum even if it is the same file.
 
 ## Goals
 
@@ -120,16 +120,11 @@ sample_data <- data.frame(
 # you can do that by using the functions: View(data frame name) and dim(data frame name)
 ```
 
-#### 7. In the chunk below, we are creating a density histogram of the 1000 sample values for the variable you created in step 4.  In a second layer, a we have a plot of the pdf for the distribution. In a third layer, a plot of the pdf of a Normal(0, 1) distribution using a different color. Play with this code by plotting the other distributions you have above.
+#### 7. Create a density histogram of the 1000 sample values for the variable you created in step 4.  In a second layer, overlay a plot of the pdf for the distribution you chose.  In a third layer, overlay a plot of the pdf of a Normal(0, 1) distribution using a different color. Hint: see step 4 above (Example code to start with section).
 
 ```{r}
-ggplot(data = sample_data, mapping = aes(x = t)) +
-  geom_histogram(mapping = aes(y = ..density..), fill = "cornflowerblue") +
-  stat_function(fun = dt, args = list(df = 3), color = "orange") +
-  stat_function(fun = dnorm, args = list(mean = 0, sd = 1), color = "purple")
+#your code goes here
 ```
-
-
 
 #### 8. Using the `pt` function, calculate the probability that a random variable that follows a t distribution with 3 degrees of freedom will be larger than 2.  Repeat this calculation, but for a Normal(0, 1) distribution.
 
@@ -141,7 +136,7 @@ ggplot(data = sample_data, mapping = aes(x = t)) +
 
 
 
-#### 10. (If time) Create density histograms of the 1000 sample values for the variables you created in steps 2 and 5, along with plots of the pdfs for those random variables.
+#### 10. Create density histograms of the 1000 sample values for the variables you created in steps 2 and 5, along with plots of the pdfs for those random variables.
 
 ```{r}
 #your code goes here
