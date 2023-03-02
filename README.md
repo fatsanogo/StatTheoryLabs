@@ -77,7 +77,7 @@ Click "Session" --> "Restart R" and try to run the tutorial again.
 - "lab0": reproducibility and documentation
 - "lab1": sampling distributions
 - "lab2": Chi_sq-F-T distributions
-- "lab3": bootstrap
+- "lab3": Large Sample Normal Approximation to the Sampling Distribution of the MLE and MOM estimators
 - "lab4": confidence intervals
 - "lab5": hypothesis testing
 - "code-training-5": Functions and Simulating Data
@@ -87,7 +87,7 @@ Click "Session" --> "Restart R" and try to run the tutorial again.
 - "intro-np": introduction to nonparametrics
 - "hw7": optimization for bivariate MLE
 
-(under development and updating for Spring 2023)
+(under development and updating for Winter 2023)
 
 ## How to Submit Google Form portion of Lab
 
