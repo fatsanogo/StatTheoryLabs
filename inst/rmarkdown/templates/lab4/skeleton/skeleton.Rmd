@@ -7,6 +7,11 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+## Evaluation
+
+Recall that I'm not going to grade the lab for accuracy, I will just check to see if you have made a good attempt at it. I will post solutions after grading, but it will be helpful to you if you try to work through the lab before checking the solutions.
+
+You should definitely feel free to work through this with someone else and just submit one version of the lab.  In that case, just put both of your names at the top of the document. Make sure you and your partner submit on lyceum even if it is the same file.
 
 ## Part I: Exploring Confidence Levels
 
@@ -178,106 +183,6 @@ b. Repeat this simulation by changing the sample size to $n=250$. How does the s
 
 Note: you should be using the distribution discussed under Part II.
 
-
-## Part III: Bootstrap t-Confidence Interval for $\mu$
-
-The main weakness of the t-CI occurs when the population is skewed. 
-
-Instead of assuming that the t-statistic follows a t-distribution, we could estimate the actual distribution of the t-statistic and create an interval based on that. This process is called the bootstrap t-interval. (We need to use the bootstrap to approximate the sampling distribution of the t-statistic since we don't trust that it is exactly defined by the t-distribution).
-
-For each of $B$ resamples, calculate the bootstrap t-statistic:
-
-$$T^* = \frac{\bar{x}^* - \bar{x}}{s^*/\sqrt{n}}$$
-
-where $\bar{x}^*$ and $s^*$ are the mean and standard deviation o the bootstrap resample and $\bar{x}$ is the mean of the original sample.
-
-Let $Q_1^*$ and $Q_2^*$ be the $\alpha/2$ and $1-\alpha/2$ quantiles of the bootstrap distribution, respectively. The bootstrap t-confidence interval for the mean is:
-
-$$(\bar{x} - Q_2^* \frac{s}{\sqrt{n}}, \bar{x} - Q_1^* \frac{s}{\sqrt{n}} )$$ 
-
-**Question 5 - Apply Concepts to Real Data**
-
-Arsenic is a naturally occuring element in the groundwater of Bangladesh. However, uch of this groundwater is used for drinking water by rural populations, so arsenic poisoning is a serious health issue. The distribution o arsenic concentrations from 271 wells in Bangladesh is incredibly right skewed, with mean 125.31 and standard deviation 297.98.
-
-a. Create a histogram of the arsenic levels.
-
-```{r}
-bangladesh <- read.csv("Bangladesh.csv", header = TRUE)
-## load this data in from Moodle and make sure it is stored in the same place as this Rmd file
-
-arsenic <- bangladesh$Arsenic
-xbar <- mean(arsenic)
-n <- length(arsenic)
-```
-
-
-b. Find a 95% t-confidence interval for the mean $\mu$ of arsenic levels in Bangladesh. Make sure you have read the information in Part III.
-
-c. Find the 95% bootstrap percentile and 95% bootstrap t-confidence intervals fo the mean arsenic levels in Bangladesh and compare the results of these two to the interval you found in part b. Which interval would you report to a policy official and why?
-
-Recall the pseudo-code for a bootstrap scenario (or refer to Lab 3):
-
-- Allocate a vector to store results.
-- Loop over B = 10000 resamplings.
-- Sample the same sample size, with replacement, from data.
-- Calculate and store value of interest.
-- Outside loop use bootstrap distribution to calculate intervals.
-
-## Deliverables
-
-Submit your R Markdown document and knitted file to Moodle as:
-
-LastName-L-04.Rmd
-
-LastName-L-04.html
-
-To get these files onto your own computer, look in the "Files" pane in the bottom right. Check the boxes next to the two files you want to export, click the "More" button (with a little blue gear), click "Export". Make sure you are exporting the files to a place where you can find them on your own computer. 
-
-*Due*: Friday, April 8th  at 5 PM
-
-## Opportunity for Extra Credit
-
-1. Read [Chapter 3 through section 3.6](https://r4ds.had.co.nz/data-visualisation.html).
-
-2. Read [Chapter 12 through Section 12.3](https://r4ds.had.co.nz/tidy-data.html).
-
-3. What are the advantages and disadvantages of displaying the information in the `bangladesh` dataset like in the following code chunk? Consider the x and y scales.
-
-```{r}
-bangladesh$site_number = 1:nrow(bangladesh)
-
-ggplot(bangladesh, aes(x = site_number, y = Arsenic))+geom_point()+geom_line()
-ggplot(bangladesh, aes(x = site_number, y = Chlorine))+geom_point()+geom_line()
-ggplot(bangladesh, aes(x = site_number, y = Cobalt))+geom_point()+geom_line()
-```
-
-4. Explain what is happening in the following code chunk. Your response should reference the structure and size of `bangladesh` and `transformed_data.
-
-```{r}
-library(tidyverse)
-
-head(bangladesh)
-dim(bangladesh)
-
-transformed_data <- pivot_longer(bangladesh, 1:3, names_to = "Material", values_to = "Level")
-
-head(transformed_data)
-dim(bangladesh)
-```
-
-5. What are the advantages and disadvantages of displaying the information in the `bangladesh` dataset like in the following code chunk? Consider the x and y scales.
-
-```{r}
-ggplot(transformed_data, aes(x = site_number, y = Level, col = Material)) +
-  geom_point() +
-  geom_line()
-
-ggplot(transformed_data, aes(x = site_number, y = Level)) +
-  geom_point() +
-  geom_line() +
-  facet_wrap(~Material)
-```
-
 * * *
 
-This lab was created by A. Flynt and was adapted by S. Stoudt and edits by Fatou Sanogo.
+This lab was created by A. Flynt and was adapted by S. Stoudt and implementation edits by Fatou Sanogo.
