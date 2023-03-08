@@ -175,7 +175,7 @@ Relevant pseudo-code:
 
 - Calculate the lower and upper bound of the confidence interval
 
-- Now instead of seeing if $\mu$ is contained in the interval (like we did in Part I), break it into two steps. First see if the interval is above $\mu$ and increase a counter `tooLow` if yes. Then see if the entire interval is above $\mu$ and increase a counter `tooHigh` if yes.
+- Now instead of seeing if $\mu$ is contained in the interval (like we did in Part I), break it into two steps. First see if the interval is below $\mu$ and increase a counter `tooLow` if yes. Then see if the entire interval is above $\mu$ and increase a counter `tooHigh` if yes.
 
 - Calculate the proportion of confidence intervals that were too low and too high.
 
