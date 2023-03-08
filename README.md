@@ -79,7 +79,8 @@ Click "Session" --> "Restart R" and try to run the tutorial again.
 - "lab2": Chi_sq-F-T distributions
 - "lab3": Large Sample Normal Approximation to the Sampling Distribution of the MLE and MOM estimators
 - "lab4": confidence intervals
-- "lab5": hypothesis testing
+- "lab5": confidence intervals for variances
+- "lab6": hypothesis testing
 - "code-training-5": Functions and Simulating Data
 - "code-training-6": Functions and Simulating Power
 - "code-training-7": Simulation Scenarios and Preliminary Plots
