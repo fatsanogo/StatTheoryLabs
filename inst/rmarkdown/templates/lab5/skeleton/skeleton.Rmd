@@ -1,7 +1,7 @@
 ---
 title: "Lab 5 Template"
 author: "Your Name"
-date: "4/27/2022"
+date: "3/17/2023"
 output: html_document
 ---
 
@@ -9,95 +9,34 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-You will need two new packages. Recall that you only have to install once.
+Today we will be looking at the normtemp dataset from amstat.org. We have measurements of the body temperature of 130 adults.
 
-```{r}
-install.packages("EnvStats") ## run once and then comment out
-install.packages("palmerpenguins") ## run once and then comment out
+```{r setup, message = FALSE, warning = FALSE, echo = FALSE}
+require(ggplot2)
+require(dplyr)
+bodytemp = read.table('https://jse.amstat.org/datasets/normtemp.dat.txt')
+names(bodytemp) <- c('temp', 'sex', 'hr')
+ggplot(data = bodytemp, mapping = aes(x = temp)) +
+  geom_density()
 ```
 
-```{r}
-library(EnvStats)
-library(palmerpenguins)
-```
+We can see from the plot above that there is substantial variability in the body temperatures of adults.  If we model $X_1, \ldots, X_{130} \sim \text{Normal}(\mu, \sigma^2)$, this variability is described by the variance parameter $\sigma^2$.  Suppose we want to estimate that variance with a confidence interval.
 
-## Background
-
-The goal of this in-class activity is for you to practice using the built in R functions to carry out hypothesis tests.
-
-Before you get started, use the help function to learn more about how to run the following tests:
-
-- one or two means: `t.test`
-- single variance: `varTest` in the package EnvStats
-- ratio of variances: `var.test`
-- one or two proportions: `prop.test` (note: this function provides a chi squared test statistic as opposed to a z test statistic, this is just the square of our typical statistic)
-
-For each test you complete be sure to provide:
-
-- a definition of the parameter of interest and your hypotheses
-- the estimator or test statistic, as calculated from the data
-- the p-value
-- the conclusion in the context of the problem
-
-
-## Exercise 1
+### 1. Find a 95% confidence interval for $\sigma^2$ based on the sample data.
 
 ```{r}
-pen_sub <- penguins[-c(4, 9:12, 48, 179, 219, 257, 269, 272), ]
-bodymass <- pen_sub$body_mass_g
-sex <- ifelse(pen_sub$sex == "female", 1, 2)
 ```
 
-a.) Write a code comment for each of the three lines above explaining what is happening.
+### 2. Does your confidence interval from part 1 contain the true parameter value $\sigma^2$?
 
-b.) Test whether the average body mass of penguins is greater than 4150 grams using $\alpha=0.05$. Interpret your answer in context (i.e. you should write something, not just display code output).
+Pick one of the options below.
 
-```{r}
+#### (a) Yes
 
-```
+#### (b) No
 
-c.) Conduct a size 0.1 test on whether the variance of penguin body mass is less than 650000 grams. Interpret your answer in context (i.e. you should write something, not just display code output).
+#### (c) There is probability 0.95 that it does, but we can't be sure.
 
-```{r}
-
-```
-
-d.) Determine whether or not it is reasonable to assume that the variation in body mass for female and male penguins is the same using $\alpha = 0.02$. 
-
-```{r}
-
-```
-
-e.) Is it reasonable to assume that there is a difference in the average body mass of female and male penguins? Make your conclusion using $\alpha = 0.02$.
-
-```{r}
-
-```
-
-## Exercise 2
-
-Do you believe that an exceptionally high percentage of the executives of large corporations are right-handed? Although 85% of the general public is right-handed, a survey of 300 chief executive officers of large corporations found that 96% were right-handed. Conduct a test using the appropriate R function, using $\alpha =0.01$. Interpret your answer in context (i.e. you should write something, not just display code output). 
-
-```{r}
-
-```
-
-## Exercise 3
-
-Infections following surgery is a serious concern that can have a major impact on a patient's road to recovery. One approach to counter infection is to kill surgical pathogens by oxidation. A study randomly assigned 250 patients to receive 30% inspired oxygen and 250 patients to receive 80% inspired oxygen. Of the patients receiving 30% inspired oxygen, 28 had a surgical wound infection compared to 13 patients who received the 80% inspired oxygen treatment. Conduct a test using the appropriate R function at the $\alpha=0.015$ level to see if this difference is statistically significant. Interpret your answer in context (i.e. you should write something, not just display code output).
-
-```{r}
-
-```
-
-## Deliverables
-
-Submit your R Markdown document and knitted file to lyceum as:
-
-LastName-L-05.Rmd
-
-LastName-L-05.html
+#### (d) We can't be sure, and we also can't make a statement like "there is probability 0.95 that it does."  The best we can say is that if we were to repeat the process of taking samples and computing confidence intervals many times, about 95% of the resulting confidence intervals would contain the actual value of $\sigma^2$.
 
 
-* * *
-This lab was created by A. Flynt and was adapted by S. Stoudt and edited by Fatou Sanogo.
