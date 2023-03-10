@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Today we will be looking at the normtemp dataset from amstat.org. We have measurements of the body temperature of 130 adults.
+Today we will be looking at the normtemp dataset from [Journal of Statistical Education](https://jse.amstat.org/datasets/). We have measurements of the body temperature of 130 adults.
 
 ```{r setup, message = FALSE, warning = FALSE, echo = FALSE}
 require(ggplot2)
