@@ -5,16 +5,27 @@ date: "3/17/2023"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+## Evaluation
+
+Recall that I'm not going to grade the lab for accuracy, I will just check to see if you have made a good attempt at it. I will post solutions after grading, but it will be helpful to you if you try to work through the lab before checking the solutions.
+
+You should definitely feel free to work through this with someone else and just submit one version of the lab.  In that case, just put both of your names at the top of the document. Make sure you and your partner submit on lyceum even if it is the same file.
+
+## Lab start here
 
 Today we will be looking at the normtemp dataset from [Journal of Statistical Education](https://jse.amstat.org/datasets/). We have measurements of the body temperature of 130 adults.
+
+The code below will load the dataset into R.
 
 ```{r setup, message = FALSE, warning = FALSE, echo = FALSE}
 require(ggplot2)
 require(dplyr)
 bodytemp = read.table('https://jse.amstat.org/datasets/normtemp.dat.txt')
+```
+
+Let's plot the dataset bodytemp,
+
+```{r}
 names(bodytemp) <- c('temp', 'sex', 'hr')
 ggplot(data = bodytemp, mapping = aes(x = temp)) +
   geom_density()
