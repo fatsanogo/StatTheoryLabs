@@ -50,4 +50,16 @@ Pick one of the options below.
 
 #### (d) We can't be sure, and we also can't make a statement like "there is probability 0.95 that it does."  The best we can say is that if we were to repeat the process of taking samples and computing confidence intervals many times, about 95% of the resulting confidence intervals would contain the actual value of $\sigma^2$.
 
+## Deliverables
 
+Submit your R Markdown document and knitted file to lyceum as:
+
+LastName-L-05.Rmd
+
+LastName-L-05.html
+
+To get these files onto your own computer, look in the "Files" pane in the bottom right. Check the boxes next to the two files you want to export, click the "More" button (with a little blue gear), click "Export". Make sure you are exporting the files to a place where you can find them on your own computer. 
+
+* * *
+
+This lab was created by Evan L. Ray and was adapted by Fatou Sanogo.
