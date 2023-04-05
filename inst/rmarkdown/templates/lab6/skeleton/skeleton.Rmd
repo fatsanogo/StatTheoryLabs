@@ -98,10 +98,6 @@ Infections following surgery is a serious concern that can have a major impact o
 
 ```
 
-## Extra Credit Opportunity
-
-Print out and complete the Gallup confidence interval worksheet. Scan and upload to Moodle.
-
 ## Deliverables
 
 Submit your R Markdown document and knitted file to lyceum as:
