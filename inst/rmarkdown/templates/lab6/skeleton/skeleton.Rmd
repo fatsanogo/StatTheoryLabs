@@ -1,13 +1,21 @@
 ---
-title: "Lab 5 Template"
+title: "Lab 6 Template"
 author: "Your Name"
-date: "4/27/2022"
+date: "4/7/2023"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+## Evaluation
+
+Recall that I'm not going to grade the lab for accuracy, I will just check to see if you have made a good attempt at it. I will post solutions after grading, but it will be helpful to you if you try to work through the lab before checking the solutions.
+
+You should definitely feel free to work through this with someone else and just submit one version of the lab.  In that case, just put both of your names at the top of the document. Make sure you and your partner submit on lyceum even if it is the same file.
+
+## Lab start here
 
 You will need two new packages. Recall that you only have to install once.
 
@@ -96,17 +104,15 @@ Print out and complete the Gallup confidence interval worksheet. Scan and upload
 
 ## Deliverables
 
-Submit your R Markdown document and knitted file to Moodle as:
+Submit your R Markdown document and knitted file to lyceum as:
 
-LastName-L-05.Rmd
+LastName-L-06.Rmd
 
-LastName-L-05.html
+LastName-L-06.html
 
 To get these files onto your own computer, look in the "Files" pane in the bottom right. Check the boxes next to the two files you want to export, click the "More" button (with a little blue gear), click "Export". Make sure you are exporting the files to a place where you can find them on your own computer. 
-
-*Due*: Monday, May 2nd at 5 PM
 
 
 * * *
 
-This lab was created by A. Flynt and was adapted by S. Stoudt.
+This lab was created by A. Flynt and was adapted by S. Stoudt and implementation edits by Fatou Sanogo.
