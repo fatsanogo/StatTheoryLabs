@@ -70,13 +70,22 @@ c.) Conduct a size 0.1 test on whether the variance of penguin body mass is less
 
 ```
 
-d.) Determine whether or not it is reasonable to assume that the variation in body mass for female and male penguins is the same using $\alpha = 0.02$. 
+d.) Now consider the code chunk below. Write a code comment for each of the four lines below explaining what is happening.
+
+```{r}
+bodymass_female_all<-subset(pen_sub, sex != "male") 
+bodymass_female <- bodymass_female_all$body_mass_g 
+
+bodymass_male_all <- subset(pen_sub, sex != "female")
+bodymass_male <- bodymass_male_all$body_mass_g
+```
+e.) Determine whether or not it is reasonable to assume that the variation in body mass for female and male penguins is the same using $\alpha = 0.02$.
 
 ```{r}
 
 ```
 
-e.) Is it reasonable to assume that there is a difference in the average body mass of female and male penguins? Make your conclusion using $\alpha = 0.02$.
+f.) Is it reasonable to assume that there is a difference in the average body mass of female and male penguins? Make your conclusion using $\alpha = 0.02$.
 
 ```{r}
 
